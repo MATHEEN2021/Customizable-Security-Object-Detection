@@ -97,10 +97,10 @@ if use_ipcam:
     stframe = st.empty()
     cap = cv2.VideoCapture(ipcam_address)
 
- elif use_webcam:
-     st.write("Webcam Detection:")
-     stframe = st.empty()
-     cap = cv2.VideoCapture(0)
+    elif use_webcam:
+        st.write("Webcam Detection:")
+         stframe = st.empty()
+         cap = cv2.VideoCapture(0)
 else:
     st.write("Upload a video for detection:")
     uploaded_file = st.file_uploader("Choose a file...", type=["mp4", "mov", "avi"])
